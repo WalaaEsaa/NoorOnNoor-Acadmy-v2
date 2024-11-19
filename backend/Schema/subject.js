@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 const sbjectSchema = new Schema({
    subjectID:Number,
+   // classID:Number,
    subjectName: String
    
    

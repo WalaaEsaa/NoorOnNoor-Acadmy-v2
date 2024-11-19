@@ -14,7 +14,8 @@ const kidSchema = new Schema({
     birthOfDate:Date,
     class:String,
     department:String,
-    password: String
+    password: String,
+    code:String
     
 })
 kidSchema.methods.comparePassword=async function (password) {
