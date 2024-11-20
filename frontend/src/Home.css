@@ -1,0 +1,78 @@
+
+
+.home{
+
+  background-image: url('/public/Foto/home3.jpeg');
+  width: 100%;
+  background-size: cover;
+
+  
+}
+
+.home-logo {
+  width: 250px; 
+  height: 200px; 
+ border-radius: 50px;
+  margin: 70px 250px 0px 0px;
+
+}
+.custom-paragraph {
+  font-size: 20px;
+  color:black;
+}
+.bold-span {
+  font-weight: bold;
+  font-size: 30px;
+  color: #f2d04b; 
+}
+
+.home h2{
+  margin: 90px 70px 0px 0px;
+  font-size: 35px;
+  font-weight: bold;
+  color:black;
+
+}
+.home p{
+  margin:0px 70px 0px 0px;
+  font-size: 25px;
+
+}
+.about {
+  height: 56vh;
+  background-image: url('/public/Foto/about.jpeg');
+  background-size: cover; 
+  background-position: center;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+
+.about-header {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+
+.about-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.about-cards .card {
+background-color: #e7d9ad;
+    border-radius: 50px; 
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    color: #ac9364;
+   width:150px;
+    height:250px;
+  
+  }
+  

@@ -45,7 +45,7 @@ const connectToDB = async () => {
 
 }
 
-app.use('/exams',examsRouter)
+app.use('/',examsRouter)
 app.use('/',lectureScheduleRouter)
 app.use('/',multiMediaRouter)
 app.use('/',quranAttendanceRouter)
