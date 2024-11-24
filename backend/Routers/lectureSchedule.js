@@ -10,21 +10,21 @@ const authntication=require('../Middleware/authntication')
 
 
 //API to get all lectureSchedule-login
-router.get('/api/lectureSchedule',authntication, lectureScheduleController.getAllQuranAttendance)
+router.get('/api/lectureSchedule',authntication, lectureScheduleController.getAllLectureSchedule)
 //Api to get one lectureSchedule according class  login
-router.get('/api/lectureSchedule',authntication,lectureScheduleController.getOneCQuranAttendance)
+router.get('/api/lectureSchedule',authntication,lectureScheduleController.getOneCLectureSchedule)
 //Api to get one lectureSchedule according  teacher login
-router.get('/api/lectureSchedule',authntication,lectureScheduleController.getOneTQuranAttendance)
+router.get('/api/lectureSchedule',authntication,lectureScheduleController.getOneTLectureSchedule)
 //Api to get one lectureSchedule according  day login
-router.get('/api/lectureSchedule',authntication,lectureScheduleController.getOneDQuranAttendance)
+router.get('/api/lectureSchedule',authntication,lectureScheduleController.getOneDLectureSchedule)
 
 //API to delete lectureSchedule -executive supervisor
-router.delete('/api/lectureSchedule/:id',authntication,lectureScheduleController.deleteQuranAttendance)
+router.delete('/api/lectureSchedule/:id',authntication,lectureScheduleController.deleteLectureSchedule)
 //API to update lectureSchedule- login
-router.put('/api/lectureSchedule/:id',authntication,lectureScheduleController.updateQuranAttendance)
+router.put('/api/lectureSchedule/:id',authntication,lectureScheduleController.updateLectureSchedule)
 
 //API to add lectureSchedule - executive supervisor 
-router.post('/api/lectureSchedule',authntication,lectureScheduleController.createQuranAttendance)
+router.post('/api/lectureSchedule',authntication,lectureScheduleController.createLectureSchedule)
 
 
 module.exports=router

@@ -40,7 +40,7 @@ exports.login = async function (req, res) {
              
             
         //******************************************* */
-        //complete error note write in schema
+        //compare function error note write in schema
         //******************************************* */
 
         // let passwordCheck = await student.comparePassword(req.body.password);  

@@ -62,12 +62,13 @@ exports.updateExams=async function(req,res){
 }
 exports.createExams=async function(req,res){
     try{
+        // console.log('role:  ' ,req.user.role)
         if(req.user.role==='admin'){
             const createdExam=await examSchema.create(req.body)
             res.json({message:"Done",data:createdExam})
         }
         else{
-            res.status(400).json({message:"i don,t have permission"})
+            res.status(400).json({message:"i don't have permission"})
 
         }
     }catch(error){

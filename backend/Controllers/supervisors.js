@@ -6,13 +6,13 @@ const { message } = require('statuses')
    
 exports.register = async function (req, res) {
     try{
-        let newStudent=new supervisorsModel(req.body)
+        let newSupervisors=new supervisorsModel(req.body)
         //hash password
                 const hashedPassword=await bcrypt.hash(req.body.password,10)
-        newStudent.password=hashedPassword
+                newSupervisors.password=hashedPassword
 
-        let createStudent=await newStudent.save()
-        res.json({message: "student added Successfully",student:createStudent})
+        let createSupervisors=await newSupervisors.save()
+        res.json({message: "Supervisors added Successfully",student:createSupervisors})
     }catch(error){
         res.status(400).json({message:"error",data:error})
 
@@ -40,12 +40,13 @@ exports.login = async function (req, res) {
                         
         
         // Generate JWT token  
-        const token = jwt.sign({ _id: supervisors._id, email: supervisors.email }, 'secret');  
+        const token = jwt.sign({ _id: supervisors._id,role: supervisors.role, email: supervisors.email }, 'secret');  
         res.status(200).json({  
-            message: "Student logged in",  
+            message: "supervisors logged in",  
             student: { 
                 name: supervisors.name, 
                 email: supervisors.email,
+                role: supervisors.role,
                  token }  
         });  
     } catch (err) {  

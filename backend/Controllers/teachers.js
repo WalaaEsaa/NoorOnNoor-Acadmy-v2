@@ -12,7 +12,7 @@ exports.register = async function (req, res) {
         newTeacher.password=hashedPassword
 
         let createTeacher=await newTeacher.save()
-        res.json({message: "student added Successfully",teachers:createTeacher})
+        res.json({message: "teachers added Successfully",teachers:createTeacher})
     }catch(error){
         res.status(400).json({message:"error",data:error})
 
@@ -39,13 +39,16 @@ exports.login = async function (req, res) {
 
                         
         
-        // Generate JWT token  
-        const token = jwt.sign({ _id: teachers._id, email: teachers.email }, 'secret');  
+        // Generate JWT token
+        // put role in token to compare access for each users   ** error if not role**
+        const token = jwt.sign({ _id: teachers._id,role: teachers.role, email: teachers.email }, 'secret');  
+        // console.log('jwt: ',token)
         res.status(200).json({  
-            message: "Student logged in",  
-            student: { 
+            message: "teachers logged in",  
+            teachers: { 
                 name: teachers.name, 
                 email: teachers.email,
+                role: teachers.role,
                  token }  
         });  
     } catch (err) {  
