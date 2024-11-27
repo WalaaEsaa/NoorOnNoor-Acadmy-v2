@@ -19,7 +19,7 @@ const Sub = () => {
                 <li><a href="#link2" className="link-item">الحلقات الفرعية <BorderTopIcon /></a></li>
                 <li><a href="#link3" className="link-item">المصادر <ImportContactsIcon /></a></li>
                 <li><a href="#link4" className="link-item">الاختبارات <DownloadDoneIcon /></a></li>
-                <button className="signbtn">تسجيل الخروج</button>
+                <button className="signbtnn">تسجيل الخروج</button>
               </ul>
             </div>
     
@@ -54,10 +54,7 @@ const Sub = () => {
               </div>
             </div>
 
-           
-            <div className="col-lg-1 col-md-1 d-none d-md-flex justify-content-center">
-              <div className="vr separator"></div>
-            </div>
+          
           </div>
         </div>
     );

@@ -18,8 +18,10 @@ const NavBar = () => {
         <Navbar expand="lg" dir={isArabic ? 'rtl' : 'ltr'}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src='./Foto/Logo1.jpeg' alt='' className="logo" />
+                    <img src='./Foto/Logo2.jpeg' alt='' className="logo" />
                 </Navbar.Brand>
+                <NavLink  className="name-logo" to="">{t('logo name')}</NavLink>
+
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto">
@@ -48,8 +50,8 @@ const NavBar = () => {
 
                     </Nav>
          
-                  <NavLink  to="/register" className="button">{t('Registration')}</NavLink>
-                  <NavLink to="/login" className="button">{t('login')}</NavLink>
+                  <NavLink  to="/register" className="button">{t('login')}</NavLink>
+                  <NavLink to="/login" className="button">{t('Registration')}</NavLink>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

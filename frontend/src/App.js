@@ -45,7 +45,7 @@ let router=createBrowserRouter([
 {path:'login',element:<Login/>},
 {path:'register',element:<Register/>},
 {path:'leiter',element:<Leiters/>},
-{path:'child',element:<Childe/>},
+{path:'Childe',element:<Childe/>},
 {path:'teacher',element:<Teacher/>},
 {path:'students',element:<Students/>},
 {path:'gruppe',element:<Gruppe/>},

@@ -7,6 +7,18 @@
   transform: scale(1.1); 
   opacity: 0.9; 
   }
+  /* تست اللوغو */
+  .name-logo{
+    color: #efd68b;
+    font-size: 20px;
+    margin: 0 10px 0 0px;
+  }
+  .name-logo:hover{
+    color: #614c10;
+    font-size: 20px;
+    margin: 0 10px 0 0px;
+  }
+
   
   .navbar {
   background-color:rgb(0, 0, 0);
@@ -23,7 +35,7 @@
   
   }
   
-  .navbar-nav .nav-link :hover{
+  .navbar-nav .nav-link:hover{
   color: #e0bc46 !important;
   
   
@@ -80,17 +92,17 @@
  
   .button{
   
-      font-weight: bold;
+      font-weight: lighter;
       background-color: #fcefa9;
-  padding: 5px;
-  border-radius: 20px;
-  border-radius: color #000000;
-  color: #726745;
-  margin:10px;
+      border-radius: 20px;
+      border-radius: color #000000;
+      color: #a39364;
+      margin:10px;
+      padding: 4px;
   }
   
   
-  .button :hover{
+  .button:hover{
       background-color: #a39364;
       color: #fcefa9;
   
@@ -103,7 +115,7 @@
   }
   
   
-  .navbar-nav .nav-link:hover {
+  .navbar-nav.nav-link:hover {
       background: linear-gradient(to right, rgb(0, 0, 0), #efd68b);
       padding: 10px;
       border-radius: 20px;

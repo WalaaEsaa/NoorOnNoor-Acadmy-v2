@@ -19,7 +19,7 @@ const Exams = () => {
                 <li><a href="#link2" className="link-item">الحلقات الفرعية <BorderTopIcon /></a></li>
                 <li><a href="#link3" className="link-item">المصادر <ImportContactsIcon /></a></li>
                 <li><a href="#link4" className="link-item">الاختبارات <DownloadDoneIcon /></a></li>
-                <button className="signbtn">تسجيل الخروج</button>
+                <button className="signbtnn"><big>تسجيل الخروج</big></button>
               </ul>
             </div>
     
